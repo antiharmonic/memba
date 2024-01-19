@@ -47,6 +47,7 @@ func main() {
     log.Fatal(err)
   }
 
+  var items []StreamItem
   // get external information or bail
   client := &http.Client{Timeout: 10 * time.Second}
   res, err := client.Get(config.String("stream.url"))
@@ -54,7 +55,7 @@ func main() {
     log.Fatal(err)
   }
   defer res.Body.Close()
-  err = json.NewDecoder(r.Body).Decode(&items)
+  err = json.NewDecoder(res.Body).Decode(&items)
   if err != nil {
     log.Fatal(err)
   }
