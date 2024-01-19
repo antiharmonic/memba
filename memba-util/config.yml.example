@@ -1,0 +1,10 @@
+---
+database:
+  host: localhost
+  user: user
+  pass: pass
+  port: 5432
+  db_name: database_name
+stream:
+  url: http://localhost/api/stream/list
+
