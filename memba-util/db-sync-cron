@@ -1,0 +1,3 @@
+* * * * * root /usr/local/bin/db-sync 2>&1 >> /var/log/db-sync.log
+
+

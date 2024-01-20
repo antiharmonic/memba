@@ -1,0 +1,8 @@
+version: "3.3"
+
+services:
+  util:
+    build: memba-util
+    network_mode: 'host'
+    environment:
+      - MEMBA_CONF=/usr/src/app/config.yml
