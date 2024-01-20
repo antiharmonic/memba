@@ -2,8 +2,10 @@ module github.com/antiharmonic/memba/memba-util
 
 go 1.20
 
+replace github.com/antiharmonic/memba/memba-server/memba => ../memba-server/memba
+
 require (
-	github.com/gookit/config/v2 v2.2.5
+	github.com/antiharmonic/memba/memba-server/memba v1.0.0
 	github.com/lib/pq v1.10.9
 )
 
@@ -12,6 +14,7 @@ require (
 	github.com/fatih/color v1.14.1 // indirect
 	github.com/goccy/go-yaml v1.11.2 // indirect
 	github.com/gookit/color v1.5.4 // indirect
+	github.com/gookit/config/v2 v2.2.5 // indirect
 	github.com/gookit/goutil v0.6.15 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect

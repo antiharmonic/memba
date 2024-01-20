@@ -1,11 +1,8 @@
-module github.com/antiharmonic/memba/memba-server
+module github.com/antiharmonic/memba/memba-server/memba
 
 go 1.20
 
-require (
-	github.com/gookit/config/v2 v2.2.5
-	github.com/sanity-io/litter v1.5.5
-)
+require github.com/gookit/config/v2 v2.2.5
 
 require (
 	dario.cat/mergo v1.0.0 // indirect
