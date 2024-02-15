@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/antiharmonic/memba/memba-server/memba"
+	"github.com/antiharmonic/memba/memba-server/pkg/memba"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 	err := memba.LoadConfig(&config)
 
 	if err != nil {
-		log.Fatalln(err)
+		log.Panicln(err)
 	}
 
 	// database
